@@ -21,7 +21,7 @@ publicly, install it from `cursor-public` instead.
 | `daloopa` | cursor/plugins#352 | merged 2026-09-10 |
 | `excalidraw` | cursor/plugins#353 | merged 2026-09-10 |
 | `coinbase` | cursor/plugins#354 | open |
-| `google-cloud-bigquery` | cursor/plugins#355 | open |
+| `google-cloud-bigquery` | cursor/plugins#355 | merged 2026-09-12 |
 
 Plugin folders are verbatim copies of the upstream `third_party/<name>/`
 directories at the commit noted above. Re-copy from upstream when a PR changes.
