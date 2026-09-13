@@ -1,0 +1,57 @@
+{
+  "name": "grok-connector-plugins-staging",
+  "owner": {
+    "name": "Minu Palaniappan",
+    "email": "mpalaniappan@x.ai"
+  },
+  "metadata": {
+    "description": "Staging marketplace for Grok connector plugins pending or recently merged in cursor/plugins. Team-scoped production testing only."
+  },
+  "plugins": [
+    {
+      "name": "gamma",
+      "source": "third_party/gamma",
+      "description": "Generate presentations, documents, and webpages."
+    },
+    {
+      "name": "webull",
+      "source": "third_party/webull",
+      "description": "View accounts, positions, orders, watchlists, and market data."
+    },
+    {
+      "name": "sp-global",
+      "source": "third_party/sp-global",
+      "description": "Query S&P Capital IQ financials, prices, and transcripts."
+    },
+    {
+      "name": "interactive-brokers",
+      "source": "third_party/interactive-brokers",
+      "description": "Review positions, balances, P&L, and draft trade instructions."
+    },
+    {
+      "name": "meltwater",
+      "source": "third_party/meltwater",
+      "description": "Search media and social mentions and pull analytics."
+    },
+    {
+      "name": "daloopa",
+      "source": "third_party/daloopa",
+      "description": "Pull source-linked fundamentals, KPIs, filings, and prices."
+    },
+    {
+      "name": "excalidraw",
+      "source": "third_party/excalidraw",
+      "description": "Draw and export hand-drawn diagrams from chat."
+    },
+    {
+      "name": "coinbase",
+      "source": "third_party/coinbase",
+      "description": "Check balances, get quotes, and preview or place trades."
+    },
+    {
+      "name": "google-cloud-bigquery",
+      "source": "third_party/google-cloud-bigquery",
+      "description": "Explore datasets and tables and run SQL queries."
+    }
+  ]
+}
