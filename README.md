@@ -22,9 +22,16 @@ publicly, install it from `cursor-public` instead.
 | `excalidraw` | cursor/plugins#353 | merged 2026-09-10 |
 | `coinbase` | cursor/plugins#354 | open |
 | `google-cloud-bigquery` | cursor/plugins#355 | merged 2026-09-12 |
+| `finance-staging` | cursor/plugins#374 (`finance`) | merged; staging-URL variant, see below |
 
 Plugin folders are verbatim copies of the upstream `third_party/<name>/`
 directories at the commit noted above. Re-copy from upstream when a PR changes.
+
+`finance-staging` is the exception: it is upstream `third_party/finance` at
+90b852d with the plugin renamed and its MCP URL switched to the xAI staging
+connectors gateway. It exists so Grok Bot can dial the staging Finance
+connector from a Cursor backend configured for staging. Grok Bot only; Cursor
+never lists it.
 
 ## Using it
 
@@ -39,6 +46,8 @@ directories at the commit noted above. Re-copy from upstream when a PR changes.
    → Configure (Coinbase has no dynamic client registration).
 4. `google-cloud-bigquery` sign-in depends on the Cursor backend running
    everysphere `d394e3cfc` or later (the `bigquery.googleapis.com` OAuth policy).
+5. `finance-staging` shows up only in Grok Bot, and only works against a
+   Cursor backend configured for the xAI staging gateway.
 
 ## Validation
 
